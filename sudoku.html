@@ -1,0 +1,190 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .sudoku-grid {
+            display: grid;
+            grid-template-columns: repeat(9, 1fr);
+            grid-template-rows: repeat(9, 1fr);
+            gap: 2px;
+            width: 270px;
+            height: 270px;
+        }
+        .cell {
+            border: 1px solid black;
+            width: 30px;
+            height: 30px;
+        }
+        .box:nth-child(3n) .cell:nth-child(3n),
+        .box:nth-child(3n-1) .cell:nth-child(3n-1),
+        .box:nth-child(3n-2) .cell:nth-child(3n-2) {
+            border-right: 2px solid red;
+        }
+        .box:nth-child(3n) .cell:nth-last-child(-n+3),
+        .box:nth-child(3n-1) .cell:nth-last-child(-n+3),
+        .box:nth-child(3n-2) .cell:nth-last-child(-n+3) {
+            border-bottom: 2px solid red;
+        }
+    </style>
+    <!-- <script>
+                let table = '<table border="1">';
+let number = 1;
+
+for (let i = 0; i < 10; i++) {
+    table += '<tr>';
+    for (let j = 0; j < 10; j++) {
+        table += `<td>${number}</td>`;
+        number++;
+    }
+    table += '</tr>';
+}
+table += '</table>';
+
+document.write(table);
+
+    </script>
+</head>
+<body>
+    <div class="sudoku-grid">
+        <div class="box">
+    
+        </div>
+    </div>
+</body>
+</html> --> 
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sudoku.css">
+    <script src="sudoku.js"></script>
+    <title>Suduku</title>
+</head>
+<body>
+    <div class="whole">
+        <div class="r1">
+            <div class="r1c1">
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+            </div>
+            <div class="r1c2">
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+            </div>
+            <div class="r1c3">
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+            </div>
+        </div>
+        <div class="r2">
+            <div class="r2c1">
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+            </div>
+            <div class="r2c2">
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+            </div>
+            <div class="r2c3">
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+            </div>
+        </div>
+        <div class="r3">
+            <div class="r3c1">
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+            </div>
+            <div class="r3c2">
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+            </div>
+            <div class="r3c3">
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+            </div>
+        </div>
+        <!-- <script>
+            for (let i = 0; i < 9; i++) {
+                document.write('<tr>');
+                for (let j = 0; j < 9; j++) {
+                    document.write('<td><input type="text" maxlength="1"></td>');
+                }
+                document.write('</tr>');
+            }
+        </script> -->
+    </div>
+<!--  
+    <script src="script.js"   ></script>  -->
+
+</body>
+</html>
+ 
+

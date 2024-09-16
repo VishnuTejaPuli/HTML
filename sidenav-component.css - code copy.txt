@@ -1,0 +1,94 @@
+/* Ensure your body has padding to avoid content being hidden behind the sidenav */
+body {
+    margin: 0;
+    padding-left: 250px; /* Adjust this value to match the width of your sidenav */
+}
+
+/* Style for the fixed sidenav */
+.sidenav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px; /* Width of your fixed sidenav */
+    background-color: #333; /* Background color of the sidenav */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+    z-index: 1000; /* Ensure it is on top of other content */
+}
+
+/* Style for logo container */
+.logo-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Style for logo button */
+.logo {
+    background-color: #007bff; /* Example logo button color */
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+/* Style for logo text */
+.logo-text {
+    margin-left: 10px;
+    font-size: 18px;
+}
+
+/* Style for sidenav navigation items */
+.sidenav-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex: 1;
+}
+
+.sidenav-nav-item {
+    margin: 15px 0;
+}
+
+.sidenav-nav-link {
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.sidenav-nav-link:hover {
+    background-color: #575757; /* Hover background color */
+}
+
+.sidenav-link-icon {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.sidenav-link-text {
+    font-size: 16px;
+}
+
+.active {
+    background-color: #007bff; /* Background color for active link */
+}
+
+/* Optional: Add media query if you want to hide the sidenav on smaller screens */
+@media (max-width: 768px) {
+    .sidenav {
+        display: none;
+    }
+}

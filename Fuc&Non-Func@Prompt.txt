@@ -1,0 +1,15 @@
+I am creating an Angular Application which is used during emergency situation categories such as Natural disasters like floods , or Accidents like (fire-accidents,Pipeline burts,Water Dam breaches)& Women safety(to report criminal incidents ).It is used for effective co-ordination among first responders,victims so that we can help them by providing necessary helpline numbers for support services.
+Helpline numbers & support services include nearest hospitals,Police station addresses in our traced locality.And a user has to report an incident he/she has observed through a form provided in the application where he is able to put name,mobile number , description of incident. This information is sent to police.
+My Angular application consists of Admin user who is able to create new information like adding new hospitals,new helpline numbers or even removing&updating them.
+WeatherApi is used to fetch weather details for the current location which is used to convey information under the Natural Disasters category. GetLocation() method is used in every category to know the current location of user . 
+Twillio API is used to send Sms from the user to police whenever SOS button is clicked
+GetAddress is used to fetch details of Latitude & longitude of a address that is given by a user&admin in the form of input.
+
+
+
+And the application's home page is mainly classified into 3 parts 'Header','Nav','Main' . Header consists of title,logo,quotation,about us.
+Nav bar consists of  different categories involved in application like Home,Natural Disasters,Accidents as buttons when clicked will redirect to new pages in same 'Main' part.
+In everypage Geotracing is done to find present location .
+
+Tell me which are functional requirements & Non-functional Requiremts according to plans written in above paragraph.
+

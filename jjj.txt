@@ -1,0 +1,60 @@
+// Title
+title Cloud-Based Architecture for HermesEIP(Emergency Information Provider) Application
+
+// Nodes and groups
+User [icon: user]
+Frontend [icon: angular]
+
+API Gateway [icon: aws-cloudendure-disaster-recovery]
+
+Authentication Service [icon: aws-cognito] {
+  JWT Token Service [icon: aws-security-group]
+}
+
+Admin Data Service [icon: user-check]
+
+Support  API [icon: gcp-api]
+ReliefCamps API [icon: gcp-api]
+IRcommon API [icon: gcp-api]
+IRanonymous API [icon: gcp-api]
+SOS API [icon: gcp-api]
+
+Backend Microservices [icon: aws-lambda] {
+  Support Service [icon: gcp-security-health-advisor]
+  ReliefCamps Service [icon: aws-healthlake]
+  IRcommon  Service [icon: azure-service-health]
+  IRanonymous Service 
+  SOS  Service
+}
+
+Databases [icon: aws-database] {
+  HelplineNumbers DB [icon: aws-database]
+  HelplineWebsites DB [icon: aws-database]
+   ReliefCamps DB [icon: aws-database]
+   Incident DB [icon : aws-database]
+   Anonymous DB [icon: aws-database]
+}
+
+// Connections
+User> Frontend
+Frontend > API Gateway
+API Gateway > Authentication Service
+API Gateway > Admin Data Service
+API Gateway > support API
+API Gateway >  ReliefCamps API
+API Gateway > IRcommon API
+Authentication Service > JWT Token Service
+JWT Token Service > Authentication Service
+Admin Data Service > Admin DB
+Support API > Support Service
+Support Service > HelpLineNumbers DB ,  HelplineWebsites DB
+Reliefcamps API > ReliefCamps Service
+ReliefCamps Service > ReliefCamps DB
+IRcommon API > IRcommon Service
+ IRcommon Service > Incident DB
+ SOS API > SOS service 
+
+
+
+
+ 

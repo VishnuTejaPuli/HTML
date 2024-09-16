@@ -1,0 +1,196 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+ body{
+    /* width: 100%;
+    height:  800px; */
+    margin: 20px;
+    padding: 40px;
+    /* background-size: cover;
+    background-repeat: no-repeat; */
+     /* background-image:  url(ust.jpg);  */
+    /* background-color: #20e1ff; */
+    color: black;
+    background-position: center;
+  
+
+    font-size: 18px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 600;
+    font-style: oblique;
+ }
+ .heading{
+  background-color: rgb(255, 255, 255);
+  opacity: 1;
+ }
+
+
+
+
+
+
+ /* h1{
+    font: 28px "Fira Sans" , sans-serif;
+    color: rgb(246, 240, 255);
+ } */
+ div{
+    margin: 7px;
+    padding: 7px;
+ }
+ div > div{
+    border: 0px;
+    border-radius: 2%;
+ }
+
+.container
+{
+   margin-top: 5px;
+   padding: 10px;
+   /* border: 2px solid black; */
+   display: grid;
+    grid-row: 1fr ;
+    grid-gap: 5px 5px;
+
+}
+/* .grid {
+    display: grid;
+    grid-template-columns: 60px 60px 60px;
+    grid-template-rows: 40px 40px 40px;
+    margin: 5px;
+    padding: 5px;
+    grid-gap: 15px 6px;
+} */
+ ul,ol{
+    display: table;
+    margin: 0 auto;
+ }
+
+
+ .row1{
+    /* background-color: rgb(184, 218, 129); */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin: 5px;
+    padding: 5px;
+    grid-gap: 15px 12px;
+
+ }
+ .row1c1, .row1c2, .row1c3, .row1c4, .row1c5 {
+    background-color: rgb(150, 237, 206);;
+    box-shadow: 0 4px 4px rgb(0, 0, 0);
+}
+ .row2{
+    /* background-color: rgb(96, 214, 179); */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin: 5px;
+    padding: 5px;
+    grid-gap: 15px 12px;
+ }
+ .row2c1, .row2c2, .row2c3, .row2c4, .row2c5 {
+    background-color: rgb(136, 223, 143);;
+    box-shadow: 0 4px 4px rgb(0, 0, 0);
+}
+
+ .row3{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin: 5px;
+    padding: 5px;
+    grid-gap: 15px 12px;
+ }
+ .row3c1, .row3c2, .row3c3, .row3c4, .row3c5 {
+    background-color: rgb(50, 169, 180);;
+    box-shadow: 0 4px 4px rgb(0, 0, 0);
+}
+ 
+ .row4{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin: 5px;
+    padding: 5px;
+    grid-gap: 15px 12px;
+ }
+ .row4c1, .row4c2, .row4c3, .row4c4, .row4c5 {
+    background-color: rgb(209, 159, 190);
+    box-shadow: 0 4px 4px rgb(0, 0, 0);
+}
+
+ .row5{
+    /* background-color: rgb(59, 220, 198); */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+    margin: 5px;
+    padding: 5px;
+    grid-gap: 15px 6px
+ }
+ .row5c1, .row5c2, .row5c3, .row5c4, .row5c5 {
+    background-color: rgb(59, 220, 198);
+    box-shadow: 0 4px 4px rgb(0, 0, 0);
+}
+ .row6{
+    /* background-color: rgb(157, 224, 176); */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+    margin: 5px;
+    padding: 5px;
+    grid-gap: 15px 6px
+
+ }
+  .row6c1, .row6c2, .row6c3, .row6c4, .row6c5 {
+    background-color: rgb(157, 224, 176);
+    box-shadow: 0 4px 4px rgb(0, 0, 0);
+} 
+
+ .row7{
+    /* background-color: azure; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+    margin: 5px;
+    padding: 5px;
+    grid-gap: 15px 6px
+ }
+ .row7c1, .row7c2, .row7c3, .row7c4, .row7c5 {
+    background-color: rgb(59, 220, 198);
+    box-shadow: 0 4px 4px rgb(0, 0, 0);
+}
+
+ .row8{
+    /* background-color: rgb(85, 171, 171); */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+    margin: 5px;
+    padding: 5px;
+    grid-gap: 15px 6px
+ }
+ .row8c1, .row8c2, .row8c3, .row8c4, .row8c5 {
+    background-color: rgb(85, 171, 171);
+    box-shadow: 0 4px 4px rgb(0, 0, 0);
+}
+
+ .row1 > div, .row2 > div, .row3 > div, .row4 > div, .row5 > div, .row6 > div , .row7 > div, .row8 > div {
+    /* background-color: #fff; */
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+ 
+.row1 > div:hover, .row2 > div:hover, .row3 > div:hover, .row4 > div:hover, .row5 > div:hover, .row6 > div:hover,  .row7 > div:hover, .row8 > div:hover{
+    transform: translateY(-5px);
+    background-color: #fff;
+    color: black;
+ 
+}
+
+
+
+
+
+
+ form
+ {
+    display: contents;
+ }

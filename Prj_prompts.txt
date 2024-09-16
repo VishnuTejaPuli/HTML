@@ -1,0 +1,19 @@
+I am creating an Angular Application titled as (Hermes-Emergency Information Provider) which is used during emergency situation categories such as Natural disasters like floods , or Accidents like (fire-accidents,Pipeline burts,Water Dam breaches,etc)& Women safety(to report criminal incidents ).
+It is used for effective co-ordination among first responders,victims so that we can help them by providing necessary helpline numbers for support services.
+Helpline numbers & support services include nearest hospitals,Police station addresses in our traced locality.And a user has to report an incident he/she has observed through a form provided in the application where he is able to put name,mobile number , description of incident.
+ This information is sent to police.My Angular application consists of Admin user who is able to create new information like adding new hospitals,new helpline numbers or even removing&updating them.
+And the application's Dashboard page or Home page is mainly classified into 3 parts 'Header','Nav','Main' .
+Header consists of title(Hermes),logo,quotation field , Current Location status& admin button at right corner for admin login.
+Nav bar consists of Nav-Home button & different categories involved below it in application like Home,Natural Disasters,Accidents, Women Safety , Child safety , Local assitance as buttons when clicked will redirect to new pages in  'Main' part.
+After clicking these category buttons nav bar has to slide back.
+Main Body part should consists Title,pics,Animations,Current city & weather-around bar/block ,About the application description field ,and also space to add other functionalities
+------------------------------------------------------------------------
+I am creating an Angular Application titled as (Hermes-Emergency Information Provider) which is used during emergency situation categories such as Natural disasters like floods, or Accidents like (fire-accidents, Pipeline Burts, Water Dam breaches, etc.) & Women safety (to report criminal incidents).
+It is used for effective co-ordination among first responders, victims so that we can help them by providing necessary helpline numbers for support services.
+Helpline numbers & support services include nearest hospitals, Police station addresses in our traced locality. And a user has to report an incident he/she has observed through a form provided in the application where he is able to put name, mobile number, description of incident.
+ This information is sent to police. My Angular application consists of Admin user who is able to create new information like adding new hospitals, new helpline numbers or even removing & updating them.
+And the application's Dashboard page or Home page is mainly classified into 3 parts 'Header','Nav','Main'.
+Header consists of title(Hermes), logo, quotation field, Current Location status& admin button at right corner for admin login.
+Nav bar consists of Nav-Home button & different categories involved below it in application like Home, Natural Disasters, Accidents, Women Safety, Child safety, Local assistance as buttons when clicked will redirect to new pages in 'Main' part.
+After clicking these category buttons nav bar has to slide back.
+Main Body part should consists Title, pics, Animations, Current city & weather-around bar/block, About the application description field, and also space to add other functionalities

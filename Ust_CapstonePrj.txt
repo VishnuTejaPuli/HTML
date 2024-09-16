@@ -1,0 +1,35 @@
+
+
+Capstone Project:
+
+
+ -------> Emergency Management System
+
+
+
+
+*> Functional & Non Functional Requirement
+
+*> Use Case Diagrams
+           *> Sequence Diagram
+           *> Wireframes
+
+
+*> High Level Design (HLD)
+           *>
+
+
+
+
+
+
+           
+*> Low Level Diagrams(LLD)
+           *>Component Diagrams
+           *>Resource Allocation
+           *>Error Handling & Recovery
+           *> Security
+           *> Code structure & Exception Handling
+
+
+           

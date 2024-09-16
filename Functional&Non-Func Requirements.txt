@@ -1,0 +1,107 @@
+When developing your Angular application tailored for emergency situations, it's crucial to delineate **Functional Requirements** and **Non-Functional Requirements**. This ensures that the application not only performs the necessary tasks but also meets quality standards essential for its effectiveness during critical moments.
+
+### **Functional Requirements**
+
+These are the specific features and behaviors your application must exhibit to fulfill its intended purpose:
+
+1. **User Location Detection (Geo-Tracing):**
+   - **Functionality:** Automatically detect and track the user's current geographical location on every page.
+   - **Purpose:** To provide location-specific information such as nearby hospitals and police stations.
+
+2. **Display of Support Services Based on Location:**
+   - **Functionality:** Retrieve and display a list of nearest hospitals, police stations, and other helpline numbers relevant to the user's traced locality.
+   - **Purpose:** To offer immediate access to essential support services during emergencies.
+
+3. **Incident Reporting Form:**
+   - **Functionality:** Provide a form where users can input their name, mobile number, and a description of an observed incident.
+   - **Features:**
+     - **Input Validation:** Ensure that all required fields are filled out correctly.
+     - **Submission Handling:** Transmit the reported information securely to the police authorities.
+   - **Purpose:** To enable users to report emergencies or incidents promptly and efficiently.
+
+4. **Admin Module/Component:**
+   - **Functionality:** Offer administrative capabilities to manage support service information.
+   - **Features:**
+     - **Add New Entries:** Allow admins to add new hospitals, helpline numbers, and other relevant information.
+     - **Update Existing Entries:** Enable modification of existing support service details.
+     - **Remove Entries:** Permit deletion of outdated or incorrect information.
+   - **Purpose:** To maintain an up-to-date and accurate repository of support services within the application.
+
+5. **Application Layout Components:**
+   - **Header:**
+     - **Content:** Display the application's title, logo, a motivational quotation, and an "About Us" section.
+     - **Functionality:** Provide consistent branding and informational content across all pages.
+   - **Navigation Bar (Nav):**
+     - **Content:** Include buttons/categories such as Home, Natural Disasters, and Accidents.
+     - **Functionality:** Enable users to navigate between different sections/pages within the 'Main' area seamlessly.
+   - **Main Content Area:**
+     - **Functionality:** Dynamically display content based on the selected navigation category, integrating with geo-tracing to show relevant information.
+
+6. **Routing and Navigation:**
+   - **Functionality:** Implement Angular routing to handle navigation between different components/pages without full page reloads.
+   - **Purpose:** To provide a smooth and responsive user experience.
+
+### **Non-Functional Requirements**
+
+These are the quality attributes and constraints that ensure the application operates effectively and reliably:
+
+1. **Performance:**
+   - **Criteria:** 
+     - Fast loading times, especially critical during emergencies.
+     - Efficient geo-tracing to minimize delays in displaying location-based information.
+   - **Purpose:** To ensure users can access necessary information and functionalities swiftly when needed most.
+
+2. **Scalability:**
+   - **Criteria:** Ability to handle a large number of concurrent users, particularly during widespread emergencies.
+   - **Implementation:** Design the application architecture to support horizontal and vertical scaling as demand increases.
+   - **Purpose:** To maintain performance and reliability under high load conditions.
+
+3. **Security:**
+   - **Criteria:** 
+     - Protect sensitive user data (e.g., names, mobile numbers, incident descriptions) through encryption and secure transmission protocols (e.g., HTTPS).
+     - Implement robust authentication and authorization mechanisms, especially for the admin module.
+     - Safeguard against common web vulnerabilities such as Cross-Site Scripting (XSS) and Cross-Site Request Forgery (CSRF).
+   - **Purpose:** To ensure data privacy, maintain user trust, and protect the application from malicious attacks.
+
+4. **Reliability and Availability:**
+   - **Criteria:** 
+     - Ensure high uptime (e.g., 99.9%) to guarantee that the application is accessible during emergencies.
+     - Implement failover mechanisms and redundant systems to minimize downtime.
+   - **Purpose:** To provide dependable access to critical information when it's most needed.
+
+5. **Usability:**
+   - **Criteria:** 
+     - Design an intuitive and user-friendly interface that can be easily navigated, even under stress.
+     - Ensure that forms and interactive elements are straightforward and accessible.
+   - **Purpose:** To facilitate quick and effective use of the application by individuals in emergency situations.
+
+6. **Maintainability:**
+   - **Criteria:** 
+     - Develop a modular and well-documented codebase to simplify updates and maintenance.
+     - Implement comprehensive testing (unit, integration) to ensure that new changes do not disrupt existing functionalities.
+   - **Purpose:** To enable efficient ongoing development and quick adaptation to changing requirements or conditions.
+
+7. **Compatibility:**
+   - **Criteria:** 
+     - Ensure the application functions correctly across various web browsers (e.g., Chrome, Firefox, Safari, Edge) and devices (desktops, tablets, smartphones).
+     - Optimize responsive design to cater to different screen sizes and resolutions.
+   - **Purpose:** To provide a consistent experience to all users, regardless of their device or browser choice.
+
+8. **Accessibility:**
+   - **Criteria:** 
+     - Adhere to accessibility standards (e.g., WCAG) to make the application usable by individuals with disabilities.
+     - Include features such as screen reader compatibility, keyboard navigation, and sufficient contrast ratios.
+   - **Purpose:** To ensure that the application is inclusive and usable by as many people as possible.
+
+9. **Compliance:**
+   - **Criteria:** 
+     - Adhere to relevant legal and regulatory standards, such as data protection laws (e.g., GDPR) since the application handles personal information.
+   - **Purpose:** To avoid legal issues and ensure ethical handling of user data.
+
+10. **Backup and Recovery:**
+    - **Criteria:** 
+      - Implement regular data backup procedures to prevent data loss.
+      - Develop a recovery strategy to restore functionality and data promptly in case of system failures.
+    - **Purpose:** To maintain data integrity and ensure continuity of service during unforeseen incidents.
+
+By meticulously outlining these functional and non-functional requirements, you can guide the development process of your Angular application to effectively serve its purpose during emergencies, ensuring both its operational capabilities and quality standards are met.

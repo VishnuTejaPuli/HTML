@@ -1,0 +1,32 @@
+#map {
+    flex-grow: 1; /* Take up the remaining space on the right */
+    height: calc(100vh - 100px); /* Adjust for any headers or footers, if present */
+    margin: 20px; /* Optional margin for spacing */
+    border-radius: 8px; /* Optional rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Optional shadow for a subtle effect */
+  }
+
+
+.main-container {
+    display: flex; /* Enables Flexbox */
+    height: 100vh; /* Full viewport height */
+  }
+
+
+
+
+
+
+
+------------------------------------------------------------
+Html
+
+<div class="main-container">
+    <!-- Left Sidebar -->
+  <div class="sidebar"> 
+      <!-- Sidebar content (e.g., navigation, logo) -->
+    </div>  
+    
+    <!-- Map Container -->
+    <div id="map"></div>
+  </div>

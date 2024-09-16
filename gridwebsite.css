@@ -1,0 +1,69 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+body{
+    height: 100vh;
+    display: grid;
+    grid-template-areas: 
+          "heading heading heading"
+          "nav main aside"
+          "nav footer footer";
+     grid-template-rows : 150px 1fr 70px;
+     row-gap : 10px;
+     column-gap:10px;
+     background-color:  rgb(118, 137, 153)
+            
+}
+
+
+header{
+grid-area: heading;
+text-align: center;
+background-color: navy
+}
+main{
+    grid-area: main ;
+    text-align: justify;
+    background-color: aquamarine;
+}
+
+nav{
+    grid-area: nav;
+    text-align: justify;
+    background-color: blanchedalmond;
+}
+
+aside{
+    grid-area:aside;
+    text-align: justify;
+    background-color: rgb(179, 130, 57);
+}
+
+footer{
+    grid-area:footer;
+    text-align: justify;
+    background-color: rgb(105, 235, 90);
+}
+
+
+
+.header > nav{
+ display: block;
+}
+
+.header > nav > a{
+    color: white;
+    float: right;
+    padding: 15px 55px;
+}
+
+@media screen and (max-width: 268px) {
+    body{
+        grid-template-columns: 1fr;
+        display: inline-block;
+    }
+}

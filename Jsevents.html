@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JsEvents</title>
+    <script>
+        function sayGreetings(){
+        alert("OLA Coma Sava");
+     }
+
+     function showSeason(){
+        var month = new Date().getMonth();
+        if(month >= 6 && month < 9) alert("Monsoon season");
+     }
+     function green(){
+            document.getElementById("greendiv").style.backgroundColor="green";
+            document.getElementById("greendiv").style.color="orange";
+     }
+     function blue(){
+            document.getElementById("bluediv").style.backgroundColor="blue";
+            document.getElementById("bluediv").style.color="pink";
+     }
+    </script>
+</head>
+<body>
+    <form action="">
+        <input type="button" value="greet" onclick="sayGreetings()"/>
+        <input type="button" value="season" onclick="showSeason()"/>
+
+        <input type="button" value="greendiv" onclick="green()"/>
+        <input type="button" value="bluediv" onclick="blue()"/>
+    </form>
+    
+    <div id="greendiv">Hello <br/><br/><br/></div>
+    <div id="bluediv">Hello <br/><br/><br/></div>
+</body>
+</html>

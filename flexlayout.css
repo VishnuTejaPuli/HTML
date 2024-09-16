@@ -1,0 +1,47 @@
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+   background-color: rgb(213, 207, 151);
+   font-size: large;   
+   width: 100vw;
+    height:  100vh;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+
+  
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  background-color: navajowhite;
+}
+.c1{
+    background-color: aquamarine;
+    width: 6vw;
+}
+
+.c2{
+    background-color: rgb(34, 171, 196);
+    width: 6vw;
+   
+}
+.c3{
+    background-color: rgb(131, 207, 96);
+    width: 6vw;
+}
+.c4{
+    background-color: rgb(185, 104, 212);
+    width: 6vw;
+}
+.c5{
+    background-color: rgb(242, 131, 185);
+    width: 6vw;
+}

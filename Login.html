@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <script>
+
+function validate(){
+    var u = document.login.username.value;
+   var p = document.login.password.value;
+    if(u.len > 8 && p.len>8)
+    return true;
+    else
+    return false;
+}
+    </script>
+</head>
+<body>
+<form action="" method="post">
+ <fieldset>
+    <legend>Login Form</legend>
+    <label for="username">username</label>
+    <input type="text" name="username" id="uid"/>
+    <label for="password">password</label>
+    <input type="password" name="username" id="pid"/>
+    <input type="submit" value="Go"/>
+    <input type="reset" value="clear">
+ </fieldset>
+</form>
+
+</body>
+</html>

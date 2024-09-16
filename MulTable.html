@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NumTables</title>
+    <style>
+        .container {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+        }
+        .row {
+          display: flex;
+          margin-bottom: 2px;
+        }
+        .cell {
+          min-width: 40px;
+          text-align: center;
+          border: 1px solid black;
+          padding: 4px;
+        }
+        .header {
+          font-weight: bold;
+        }
+        .total-product {
+          margin-top: 10px;
+        }
+      </style>
+</head>
+<body>
+    <h1>Multiplication Table</h1>
+
+  <div id="tableContainer" class="container"></div>
+ 
+ <script>
+   const rows = 100;
+   const cols = 100;
+
+   const tableContainer = document.getElementById('tableContainer');
+
+   let totalProduct = 1;
+
+   // Create the header row
+   let headerRowHTML = '<div class="row"><div class="cell"></div>'; // Empty corner cell
+   for (let col = 1; col <= cols; col++) {
+     headerRowHTML += `<div class="cell header">${col}</div>`;
+   }
+   headerRowHTML += '</div>';
+   tableContainer.innerHTML += headerRowHTML;
+
+   for (let row = 1; row <= rows; row++) {
+     let rowHTML = `<div class="row"><div class="cell header">${row}</div>`;
+     for (let col = 1; col <= cols; col++) {
+       const cellValue = row * col;
+       rowHTML += `<div class="cell">${cellValue}</div>`;
+     }
+     rowHTML += '</div>';
+     tableContainer.innerHTML += rowHTML;
+   }
+</script>
+</body>
+</html>

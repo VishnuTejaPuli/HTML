@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions in Js</title>
+    <script>   
+     
+     
+
+   // Json objects in Javascript
+   var jsonRef = {
+                    data:[
+                      {company:"Google",location:"San Francisco",country:"Usa"},
+                      {company:"Infosys",location:"Bengaluru",country:"India"},
+                      {company:"Tcs",location:"Mumbai",country:"India"},
+                      {company:"Ust",location:"Trv",country:"India"},
+                      {company:"Nvidia",location:"Santa clara",country:"Usa",listed:"NASDAQ"},
+                    ],    
+   };
+
+      console.log(jsonRef.data);
+//    console.log(jsonRef.data[0].location);
+//    console.log(jsonRef.data[0]);
+   var movie = {
+      name: "Titanic",year: 1997};
+      console.log(movie.name);
+      console.log(movie.year);
+      movie.hero="Leonardo"
+      console.log(movie.hero);
+ 
+    //callback functions
+    const isEven = (n) => {
+    return n % 2 == 0;
+   } ;
+
+    let printMsg = (evenFunc,num) => {
+        const isNumEven = evenFunc(num);
+        console.log(`${num} is an even number : ${isNumEven}`);
+    };
+
+    printMsg(isEven,16);
+    const sq2 = (n) => {
+        return n*n ;
+      };
+
+       var r = sq2(9);
+       alert(r);
+         const sq = function(n){
+            return n*n;
+         };
+
+         let s= sq;
+         var res = s(5);
+         console.log(res);                
+    </script>
+</head>
+<body>
+         
+</body>
+</html>

@@ -1,0 +1,20 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+}
+
+.center{
+    background-color: azure;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width:100vw;
+    height: 100vh;
+}
+
